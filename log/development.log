@@ -7404,3 +7404,3746 @@ Processing by ContactsController#create as JS
   [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 19:40:44.228985"], ["name", "Sterling Archer"], ["phone_number", "slkafdj"], ["updated_at", "2014-10-08 19:40:44.228985"]]
   [1m[35m (50.1ms)[0m  COMMIT
 Completed 200 OK in 56ms (Views: 0.4ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:46:03 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 51ms
+
+SyntaxError (/Users/fgarbagnati/SendHubApp/app/views/contacts/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...id => "new-contact-form" remote: true do |f| @output_buffer....
+...                               ^
+/Users/fgarbagnati/SendHubApp/app/views/contacts/index.html.erb:45: syntax error, unexpected keyword_ensure, expecting $end):
+  actionview (4.1.1) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.1) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:46:18 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 294ms (Views: 293.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:46:19 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:46:29 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mickey Mouse", "phone_number"=>"234234234"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 19:46:29.090269"], ["name", "Mickey Mouse"], ["phone_number", "234234234"], ["updated_at", "2014-10-08 19:46:29.090269"]]
+  [1m[36m (34.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 38ms (Views: 0.4ms | ActiveRecord: 34.7ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:46:33 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mickey Mouse", "phone_number"=>"234234234"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 19:46:33.534089"], ["name", "Mickey Mouse"], ["phone_number", "234234234"], ["updated_at", "2014-10-08 19:46:33.534089"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 142ms (Views: 141.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:47:15 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:47:20 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mickey Mouse", "phone_number"=>"23489234"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 19:47:20.346649"], ["name", "Mickey Mouse"], ["phone_number", "23489234"], ["updated_at", "2014-10-08 19:47:20.346649"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:48:55 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 175ms (Views: 173.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:48:56 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:49:02 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mickey Mouse", "phone_number"=>"23947"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 19:49:02.278369"], ["name", "Mickey Mouse"], ["phone_number", "23947"], ["updated_at", "2014-10-08 19:49:02.278369"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:52:43 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:52:53 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Gumby", "phone_number"=>"234298734"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 19:52:53.830336"], ["name", "Gumby"], ["phone_number", "234298734"], ["updated_at", "2014-10-08 19:52:53.830336"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:53:32 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 148ms (Views: 147.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:53:33 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:53:45 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Buzz Lightyear", "phone_number"=>"2093432343"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 19:53:45.437771"], ["name", "Buzz Lightyear"], ["phone_number", "2093432343"], ["updated_at", "2014-10-08 19:53:45.437771"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:55:04 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 298ms (Views: 297.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:05 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:55:11 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Bo Peep", "phone_number"=>"23423423423"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 19:55:11.099933"], ["name", "Bo Peep"], ["phone_number", "23423423423"], ["updated_at", "2014-10-08 19:55:11.099933"]]
+  [1m[36m (14.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:55:26 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:55:31 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Slinky", "phone_number"=>"23423423423"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 19:55:31.601779"], ["name", "Slinky"], ["phone_number", "23423423423"], ["updated_at", "2014-10-08 19:55:31.601779"]]
+  [1m[35m (16.0ms)[0m  COMMIT
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:57:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:58:34 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 332ms (Views: 331.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:58:35 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:58:44 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mr Potato Head", "phone_number"=>"a234234"}, "commit"=>"Add Contact"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 19:58:44.595818"], ["name", "Mr Potato Head"], ["phone_number", "a234234"], ["updated_at", "2014-10-08 19:58:44.595818"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 165ms (Views: 164.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:59:09 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 12:59:17 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mrs Potato Head", "phone_number"=>"23982398298"}, "commit"=>"Add Contact"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 19:59:17.943999"], ["name", "Mrs Potato Head"], ["phone_number", "23982398298"], ["updated_at", "2014-10-08 19:59:17.943999"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 160ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:07 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:01:15 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Woody", "phone_number"=>"2382342342"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:01:15.135338"], ["name", "Woody"], ["phone_number", "2382342342"], ["updated_at", "2014-10-08 20:01:15.135338"]]
+  [1m[36m (46.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 50ms (Views: 0.4ms | ActiveRecord: 46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 150ms (Views: 149.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:01:33 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:01:38 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"asdf", "phone_number"=>"asdfasdf"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:01:38.255490"], ["name", "asdf"], ["phone_number", "asdfasdf"], ["updated_at", "2014-10-08 20:01:38.255490"]]
+  [1m[35m (2.8ms)[0m  COMMIT
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 133ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:06 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:03:17 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Wall-E", "phone_number"=>"2828282828"}, "commit"=>"Add Contact"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:03:17.472420"], ["name", "Wall-E"], ["phone_number", "2828282828"], ["updated_at", "2014-10-08 20:03:17.472420"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 145ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:03:43 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:03:50 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Eve", "phone_number"=>"2322322323"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:03:50.046993"], ["name", "Eve"], ["phone_number", "2322322323"], ["updated_at", "2014-10-08 20:03:50.046993"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 149ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:05:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 132ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 141ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:32 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:33 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:33 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:33 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:06:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 173ms (Views: 172.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:07:55 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:08:04 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"Miamiamiamiamia"}, "commit"=>"Add Contact"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:08:04.183167"], ["name", "Mia"], ["phone_number", "Miamiamiamiamia"], ["updated_at", "2014-10-08 20:08:04.183167"]]
+  [1m[36m (20.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 24ms (Views: 0.4ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 163ms (Views: 162.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:08:37 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:08:45 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"whatamidoing", "phone_number"=>"whywhywhy"}, "commit"=>"Add Contact"}
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:08:45.121052"], ["name", "whatamidoing"], ["phone_number", "whywhywhy"], ["updated_at", "2014-10-08 20:08:45.121052"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:09:29 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 331ms (Views: 330.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:30 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:09:33 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"asdfj", "phone_number"=>"askjhdf"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:09:33.635502"], ["name", "asdfj"], ["phone_number", "askjhdf"], ["updated_at", "2014-10-08 20:09:33.635502"]]
+  [1m[36m (64.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 68ms (Views: 0.3ms | ActiveRecord: 65.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:09:58 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 179ms (Views: 178.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:09:59 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:10:01 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"asf", "phone_number"=>"asdfasdfasf"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:10:01.991258"], ["name", "asf"], ["phone_number", "asdfasdfasf"], ["updated_at", "2014-10-08 20:10:01.991258"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:11:06 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 233ms (Views: 232.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:06 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:06 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:07 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:07 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:07 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:07 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:07 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:11:14 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"23939292929"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:11:14.256536"], ["name", "Mia"], ["phone_number", "23939292929"], ["updated_at", "2014-10-08 20:11:14.256536"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:31 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:11:37 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Bruce", "phone_number"=>"2323923"}, "commit"=>"Add Contact"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:11:37.005836"], ["name", "Bruce"], ["phone_number", "2323923"], ["updated_at", "2014-10-08 20:11:37.005836"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 159ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:11:59 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:12:04 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Bruce", "phone_number"=>"Goose"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:12:04.602130"], ["name", "Bruce"], ["phone_number", "Goose"], ["updated_at", "2014-10-08 20:12:04.602130"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 138ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:13:28 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:13:37 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"br00se", "phone_number"=>"g00se"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:13:37.445177"], ["name", "br00se"], ["phone_number", "g00se"], ["updated_at", "2014-10-08 20:13:37.445177"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 274ms (Views: 273.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:15:18 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:15:23 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"akljsdf", "phone_number"=>"asldfkj"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:15:23.668326"], ["name", "akljsdf"], ["phone_number", "asldfkj"], ["updated_at", "2014-10-08 20:15:23.668326"]]
+  [1m[36m (347.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 351ms (Views: 0.3ms | ActiveRecord: 348.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:16:51 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 281ms (Views: 280.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:16:52 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:17:01 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"BRUCE", "phone_number"=>"BRUCEY"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:17:01.637597"], ["name", "BRUCE"], ["phone_number", "BRUCEY"], ["updated_at", "2014-10-08 20:17:01.637597"]]
+  [1m[35m (161.7ms)[0m  COMMIT
+Completed 200 OK in 165ms (Views: 0.3ms | ActiveRecord: 162.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 67ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:18:21 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:18:28 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"8262769"}, "commit"=>"Add Contact"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:18:28.500262"], ["name", "Mia"], ["phone_number", "8262769"], ["updated_at", "2014-10-08 20:18:28.500262"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:19:08 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 268ms (Views: 267.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:09 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:19:13 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"G"}, "commit"=>"Add Contact"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:19:13.361724"], ["name", "Mia"], ["phone_number", "G"], ["updated_at", "2014-10-08 20:19:13.361724"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 242ms (Views: 242.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:19:35 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:19:42 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Home", "phone_number"=>"4082684823"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:19:42.240025"], ["name", "Home"], ["phone_number", "4082684823"], ["updated_at", "2014-10-08 20:19:42.240025"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 138ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:20:02 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:20:08 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"lets try", "phone_number"=>"thisagain"}, "commit"=>"Add Contact"}
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:20:08.351158"], ["name", "lets try"], ["phone_number", "thisagain"], ["updated_at", "2014-10-08 20:20:08.351158"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:23:00 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:23:06 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"herro", "phone_number"=>"herrrrrrrro"}, "commit"=>"Add Contact"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:23:06.682093"], ["name", "herro"], ["phone_number", "herrrrrrrro"], ["updated_at", "2014-10-08 20:23:06.682093"]]
+  [1m[36m (18.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:24:08 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 85ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:09 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:24:14 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"Miamia"}, "commit"=>"Add Contact"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:24:14.582644"], ["name", "Mia"], ["phone_number", "Miamia"], ["updated_at", "2014-10-08 20:24:14.582644"]]
+  [1m[35m (60.3ms)[0m  COMMIT
+Completed 200 OK in 64ms (Views: 0.4ms | ActiveRecord: 61.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 84ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:24:55 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:25:01 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"miamiamiamia"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:25:01.425643"], ["name", "Mia"], ["phone_number", "miamiamiamia"], ["updated_at", "2014-10-08 20:25:01.425643"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:28:50 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 358ms (Views: 357.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:28:51 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:28:58 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"4088262769"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 20:28:58.717781"], ["name", "Mia"], ["phone_number", "4088262769"], ["updated_at", "2014-10-08 20:28:58.717781"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:30:21 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 179ms (Views: 178.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 13:30:22 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 13:30:26 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"stop", "phone_number"=>"it"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 20:30:26.022971"], ["name", "stop"], ["phone_number", "it"], ["updated_at", "2014-10-08 20:30:26.022971"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:31:00 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5683ms (Views: 5682.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:31:08 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 14:31:21 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"4088262769"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 21:31:21.585316"], ["name", "Mia"], ["phone_number", "4088262769"], ["updated_at", "2014-10-08 21:31:21.585316"]]
+  [1m[35m (37.7ms)[0m  COMMIT
+Completed 200 OK in 42ms (Views: 0.4ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:36:54 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (185.8ms)
+Completed 200 OK in 1588ms (Views: 1559.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:37:01 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 14:37:16 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"04094094094"}, "commit"=>"Add Contact"}
+  [1m[36m (897.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (780.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 21:37:17.840362"], ["name", "Mia"], ["phone_number", "04094094094"], ["updated_at", "2014-10-08 21:37:17.840362"]]
+  [1m[36m (145.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 1827ms (Views: 1.0ms | ActiveRecord: 1822.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:40:42 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 238ms (Views: 207.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:40:44 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 14:40:50 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"29382938"}, "commit"=>"Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 21:40:50.857284"], ["name", "Mia"], ["phone_number", "29382938"], ["updated_at", "2014-10-08 21:40:50.857284"]]
+  [1m[35m (51.2ms)[0m  COMMIT
+Completed 200 OK in 56ms (Views: 0.5ms | ActiveRecord: 52.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 135ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:41:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:42:28 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 14:42:36 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Bruce", "phone_number"=>"3933933939"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (172.6ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 21:42:36.931863"], ["name", "Bruce"], ["phone_number", "3933933939"], ["updated_at", "2014-10-08 21:42:36.931863"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 177ms (Views: 0.4ms | ActiveRecord: 173.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 332ms (Views: 331.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:43:02 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 14:43:36 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"2922922929"}, "commit"=>"Add Contact"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 21:43:36.919980"], ["name", "Mia"], ["phone_number", "2922922929"], ["updated_at", "2014-10-08 21:43:36.919980"]]
+  [1m[35m (9.7ms)[0m  COMMIT
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 234ms (Views: 233.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:46:02 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 14:46:31 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"3338338383"}, "commit"=>"Add Contact"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 21:46:31.594210"], ["name", "Mia"], ["phone_number", "3338338383"], ["updated_at", "2014-10-08 21:46:31.594210"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:41:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (19.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 1385ms (Views: 1272.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:41:45 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 15:41:52 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"29839823"}, "commit"=>"+Add Contact"}
+  [1m[35m (18.3ms)[0m  BEGIN
+  [1m[36mSQL (58.5ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 22:41:53.005879"], ["name", "Mia"], ["phone_number", "29839823"], ["updated_at", "2014-10-08 22:41:53.005879"]]
+  [1m[35m (35.8ms)[0m  COMMIT
+Completed 200 OK in 287ms (Views: 0.8ms | ActiveRecord: 162.3ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 15:42:46 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 15:42:46 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 15:42:46 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:42:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:42:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:51:58 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 406ms (Views: 405.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:51:59 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 15:52:06 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Bruce", "phone_number"=>"38338338383"}, "commit"=>"+Add Contact"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 22:52:06.862186"], ["name", "Bruce"], ["phone_number", "38338338383"], ["updated_at", "2014-10-08 22:52:06.862186"]]
+  [1m[36m (17.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 66ms (Views: 1.0ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/send_message?name=Bruce&phone_number=38338338383&messageBody=Herro" for 127.0.0.1 at 2014-10-08 15:52:14 -0700
+
+ActionController::RoutingError (No route matches [GET] "/send_message"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:53:11 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 15:53:17 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Bruce", "phone_number"=>"3333333333"}, "commit"=>"+Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 22:53:17.945600"], ["name", "Bruce"], ["phone_number", "3333333333"], ["updated_at", "2014-10-08 22:53:17.945600"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/send_message?name=Bruce&phone_number=3333333333&messageBody=hello" for 127.0.0.1 at 2014-10-08 15:53:25 -0700
+
+ActionController::RoutingError (uninitialized constant SendMessageController):
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 157ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:56:31 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 15:56:38 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"mia", "phone_number"=>"3939393939"}, "commit"=>"+Add Contact"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 22:56:38.532193"], ["name", "mia"], ["phone_number", "3939393939"], ["updated_at", "2014-10-08 22:56:38.532193"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/send_message?name=mia&phone_number=14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:56:53 -0700
+
+ActionController::RoutingError (No route matches [GET] "/send_message"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:57:19 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 15:57:29 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 22:57:29.910509"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 22:57:29.910509"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:57:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"herro"}
+Redirected to http://localhost:3000index
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:57:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"herro"}
+Redirected to http://localhost:3000index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:57:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"herro"}
+Redirected to http://localhost:3000index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:57:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"herro"}
+Redirected to http://localhost:3000index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:57:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"herro"}
+Redirected to http://localhost:3000index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:57:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"herro"}
+Redirected to http://localhost:3000index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=herro" for 127.0.0.1 at 2014-10-08 15:57:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"herro"}
+Redirected to http://localhost:3000index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 134ms (Views: 132.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:08:57 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:09:07 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 23:09:07.376716"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:09:07.376716"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=omg+test" for 127.0.0.1 at 2014-10-08 16:09:15 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"omg test"}
+Completed 500 Internal Server Error in 674ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/contacts_controller.rb:13:in `send_message'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (46.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:10:07 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:10:18 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 23:10:18.377230"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:10:18.377230"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=WHYYY" for 127.0.0.1 at 2014-10-08 16:10:34 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"WHYYY"}
+Completed 500 Internal Server Error in 189ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/contacts_controller.rb:13:in `send_message'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:12:19 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:12:19 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:12:19 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:12:19 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:12:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:12:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:12:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:12:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:12:20 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:12:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:12:20 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:12:20 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:12:20 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:12:50 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 23:12:50.885422"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:12:50.885422"]]
+  [1m[36m (142.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 164ms (Views: 0.4ms | ActiveRecord: 148.3ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=Herro" for 127.0.0.1 at 2014-10-08 16:12:57 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"Herro"}
+Completed 500 Internal Server Error in 73ms
+
+ActionView::MissingTemplate (Missing template contacts/send_message, application/send_message with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fgarbagnati/SendHubApp/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:14:04 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:14:04 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:14:04 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:14:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:14:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:14:05 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:14:15 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 23:14:15.982363"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:14:15.982363"]]
+  [1m[35m (59.9ms)[0m  COMMIT
+Completed 200 OK in 75ms (Views: 0.4ms | ActiveRecord: 63.1ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=kill+me+now" for 127.0.0.1 at 2014-10-08 16:14:26 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"kill me now"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template contacts/send_message, application/send_message with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fgarbagnati/SendHubApp/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 123ms (Views: 122.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:32 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:33 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:18:33 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:18:40 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 23:18:40.770599"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:18:40.770599"]]
+  [1m[36m (16.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 63ms (Views: 0.4ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=YAY" for 127.0.0.1 at 2014-10-08 16:18:50 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"YAY"}
+Completed 500 Internal Server Error in 632ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/contacts_controller.rb:12:in `send_message'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:20:32 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:20:33 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:20:47 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 23:20:47.784232"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:20:47.784232"]]
+  [1m[35m (17.1ms)[0m  COMMIT
+Completed 200 OK in 41ms (Views: 0.6ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=alskjfdalks" for 127.0.0.1 at 2014-10-08 16:21:03 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"alskjfdalks"}
+Completed 500 Internal Server Error in 191ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/contacts_controller.rb:13:in `send_message'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:27:03 -0700
+
+SyntaxError (/Users/fgarbagnati/SendHubApp/app/controllers/contacts_controller.rb:26: syntax error, unexpected ':', expecting tASSOC
+    "contacts": [
+               ^
+/Users/fgarbagnati/SendHubApp/app/controllers/contacts_controller.rb:28: syntax error, unexpected ',', expecting $end):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (47.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (77.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 144ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:27:23 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:27:33 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 23:27:33.525775"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:27:33.525775"]]
+  [1m[36m (12.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 43ms (Views: 0.6ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=asldkfj" for 127.0.0.1 at 2014-10-08 16:27:37 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"asldkfj"}
+Completed 500 Internal Server Error in 637ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/contacts_controller.rb:14:in `send_message'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (35.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 107ms (Views: 105.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:06 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:28:14 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 23:28:14.561309"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:28:14.561309"]]
+  [1m[35m (21.8ms)[0m  COMMIT
+Completed 200 OK in 45ms (Views: 0.5ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=hello" for 127.0.0.1 at 2014-10-08 16:28:23 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"hello"}
+Completed 500 Internal Server Error in 190ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/contacts_controller.rb:14:in `send_message'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (35.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:28:41 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 170ms (Views: 168.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:28:42 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:28:50 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Mia", "phone_number"=>"+14088262769"}, "commit"=>"+Add Contact"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-10-08 23:28:50.565427"], ["name", "Mia"], ["phone_number", "+14088262769"], ["updated_at", "2014-10-08 23:28:50.565427"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 26ms (Views: 1.1ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/send_message?name=Mia&phone_number=%2B14088262769&messageBody=aslkdf" for 127.0.0.1 at 2014-10-08 16:28:59 -0700
+Processing by ContactsController#send_message as */*
+  Parameters: {"name"=>"Mia", "phone_number"=>"+14088262769", "messageBody"=>"aslkdf"}
+Completed 500 Internal Server Error in 191ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/contacts_controller.rb:14:in `send_message'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (17.5ms)
