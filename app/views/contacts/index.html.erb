@@ -1,0 +1,20 @@
+<div class="container">
+<h1>SendHub App</h1>
+<hr />
+
+<%= form_for :contacts do |f| %>
+  <p>
+    <%= f.text_field :attr, :placeholder => "Name" %>
+  </p>
+  <p>
+    <%= f.text_field :attr, :placeholder => "Phone Number" %>
+  </p>
+  <p>
+    <%= f.submit "Add Contact", :class => "btn btn-primary" %>
+  </p>
+<% end %>
+
+<div class="contact_container">
+</div>
+
+</div>
