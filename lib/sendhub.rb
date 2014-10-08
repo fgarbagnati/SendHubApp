@@ -1,3 +1,6 @@
+require 'httparty'
+require 'json'
+
 class SendHub
   include HTTParty
   # https://api.sendhub.com/v1/messages/?username=NUMBER&api_key=APIKEY
