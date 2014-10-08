@@ -5,5 +5,10 @@ $(document).ready( function() {
 })
 
 appendData = function( data ) {
-  $( 'table' ).append('<tr><td>' + data.name + '</td></tr>')
+  // $( 'table' ).append('<tr><td><a href="#">' + data.name + '</a></td></tr>')
+  var source = $('#table-template').html();
+  var template = Handlebars.compile(source);
+  var placeHolder = $('table');
+  var html = template(data);
+  placeHolder.append(html);
 }
