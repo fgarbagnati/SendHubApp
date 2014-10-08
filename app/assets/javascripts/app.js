@@ -32,5 +32,15 @@ function appendMessageBox(contact_name, contact_number) {
   var placeholder = $('.send_message');
   var html = template( data )
   placeholder.append(html);
+  // setButtonListener(data);
   // debugger
 }
+
+// function setButtonListener(data) {
+//   $('#submit-text').submit(sendMessage)
+// }
+
+// function sendMessage(e) {
+//   e.preventDefault
+//   console.log(data)
+// }

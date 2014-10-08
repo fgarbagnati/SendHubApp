@@ -28,15 +28,17 @@
 </div>
 
 <div class="send_message">
-  <script id='message-form-template' type='text/x-handlebars-template'>
-    <form role="form">
+<!--   <form role="form"> -->
+<%= form_for :contacts, remote: true do |f| %>
+    <script id='message-form-template' type='text/x-handlebars-template'>
       <div class="form-group">
         <label for="text_body">Enter body of text to {{name}}</label>
         <textarea id="messageContent" placeholder="Enter text here..."></textarea>
       </div>
-      <button type="submit" class="btn btn-success">Send!</button>
-    </form>
-  </script>
+      <button type="submit" id="submit-text" class="btn btn-success">Send!</button>
+      </script>
+<!--     </form> -->
+<% end %>
 </div>
 
 </div>
