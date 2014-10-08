@@ -7,11 +7,17 @@
 }
 
 .send_message {
-  border: #ccc solid 2px;
-  border-radius: 25px;
+/*  border: #ccc solid 2px;
+  border-radius: 25px;*/
   width: 350px;
   padding: 5px;
   height: 400px;
   float: right;
   margin-right: 150px;
+}
+
+textarea {
+  width:325px;
+  height:150px;
+  margin: 5px;
 }

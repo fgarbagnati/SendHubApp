@@ -17,12 +17,28 @@
 <div class="contact_container">
   <h3>Contacts</h3>
   <table class="table table-hover">
-
+    <script id='table-template' type='text/x-handlebars-template'>
+      <tr>
+        <td>{{id}}</td>
+        <td><a href="#" class="table-link">{{name}}</a></td>
+        <td>{{phone_number}}</td>
+      </tr>
+    </script>
   </table>
 </div>
 
 <div class="send_message">
-
+<!--   <form role="form"> -->
+<%= form_for :contacts, remote: true do |f| %>
+    <script id='message-form-template' type='text/x-handlebars-template'>
+      <div class="form-group">
+        <label for="text_body">Enter body of text to {{name}}</label>
+        <textarea id="messageContent" placeholder="Enter text here..."></textarea>
+      </div>
+      <button type="submit" id="submit-text" class="btn btn-success">Send!</button>
+      </script>
+<!--     </form> -->
+<% end %>
 </div>
 
 </div>
