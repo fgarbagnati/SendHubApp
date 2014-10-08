@@ -51,10 +51,10 @@ function setButtonListener() {
 
 function sendMessage( messageData ) {
   console.log( messageData )
-  var ajaxRequest = $.ajax({
-    url: '/send_message',
-    // type: ,
-    data: messageData
-  })
+  // var ajaxRequest = $.ajax({
+  //   url: '/send_message',
+  //   // type: ,
+  //   data: messageData
+  // })
 
 }
