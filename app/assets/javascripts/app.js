@@ -1,10 +1,11 @@
 $(document).ready( function() {
-  $('form').on('ajax:success', function (e, data) {
+  $('#new-contact-form').on('ajax:success', function (e, data) {
     appendData( data )
   });
 })
 
 function appendData( data ) {
+  debugger
   var source = $('#table-template').html();
   var template = Handlebars.compile(source);
   var placeHolder = $('table');

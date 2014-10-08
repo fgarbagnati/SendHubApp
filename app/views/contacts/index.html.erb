@@ -2,7 +2,7 @@
 <h1>SendHub App</h1>
 <hr />
 
-<%= form_for :contacts, remote: true do |f| %>
+<%= form_for :contacts, :id => "new-contact-form", remote: true do |f| %>
   <p>
     <%= f.text_field :name, :placeholder => "Name" %>
   </p>
