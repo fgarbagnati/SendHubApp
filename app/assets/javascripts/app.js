@@ -19,12 +19,18 @@ function setLinkListeners() {
 
 function triggerMessageBox(e) {
   e.preventDefault();
-  var name = this.innerHTML
-  var tableRow = this.parentElement.parentElement
-  var number = tableRow.children[2].innerHTML
+  var name = this.innerHTML;
+  var tableRow = this.parentElement.parentElement;
+  var number = tableRow.children[2].innerHTML;
   appendMessageBox(name, number);
 }
 
-function appendMessageBox(name, number) {
-  debugger
+function appendMessageBox(contact_name, contact_number) {
+  var data = {'name': contact_name, 'phone_number': contact_number }
+  var source = $('#message-form-template').html();
+  var template = Handlebars.compile(source);
+  var placeholder = $('.send_message');
+  var html = template( data )
+  placeholder.append(html);
+  // debugger
 }
