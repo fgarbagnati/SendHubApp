@@ -1,11 +1,10 @@
 $(document).ready( function() {
-  $('#new-contact-form').on('ajax:success', function (e, data) {
+  $('form').on('ajax:success', function (e, data) {
     appendData( data )
   });
 })
 
 function appendData( data ) {
-  debugger
   var source = $('#table-template').html();
   var template = Handlebars.compile(source);
   var placeHolder = $('table');
@@ -31,17 +30,25 @@ function appendMessageBox(contact_name, contact_number) {
   var source = $('#message-form-template').html();
   var template = Handlebars.compile(source);
   var placeholder = $('.send_message');
-  var html = template( data )
+  var html = template( data );
   placeholder.append(html);
-  // setButtonListener(data);
-  // debugger
+
+  setButtonListener();
 }
 
-// function setButtonListener(data) {
-//   $('#submit-text').submit(sendMessage)
-// }
+function setButtonListener() {
+  $('button').on('click', function( e ) {
+    e.preventDefault();
+    var message = $('textarea').val()
+    var name = $('#update-name').val()
+    var phone_number = $('#update-number').val()
+    var messageData = {"name": name, "phone_number": phone_number, "messageBody": message}
+    // debugger
 
-// function sendMessage(e) {
-//   e.preventDefault
-//   console.log(data)
-// }
+    sendMessage( messageData )
+  });
+}
+
+function sendMessage( messageData ) {
+  console.log( messageData )
+}

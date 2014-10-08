@@ -21,3 +21,7 @@ textarea {
   height:150px;
   margin: 5px;
 }
+
+.hidden-number {
+  visibility: hidden;
+}
