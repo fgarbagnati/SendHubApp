@@ -10,11 +10,15 @@
     <%= f.text_field :phone_number, :placeholder => "Phone Number" %>
   </p>
   <p>
-    <%= f.submit "Add Contact", :class => "btn btn-primary" %>
+    <%= f.submit "Add Contact", :id => "form_submit", :class => "btn btn-primary" %>
   </p>
 <% end %>
 
 <div class="contact_container">
+  <h3>Contacts</h3>
+  <table class="table table-hover">
+
+  </table>
 </div>
 
 </div>

@@ -11,4 +11,11 @@ class ContactsController < ApplicationController
   def contact_params
     params.require(:contacts).permit(:name, :phone_number)
   end
+
+  def destroy
+    @contact = Contact.find(params[:id])
+    @contact.destroy
+
+    render 'index'
+  end
 end
