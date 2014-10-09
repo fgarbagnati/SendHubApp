@@ -11147,3 +11147,94 @@ OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server c
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 283ms (Views: 281.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:55:53 -0700
+  [1m[36m (110.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (4.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateContacts (20141008065152)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (17.4ms)[0m  [1mCREATE TABLE "contacts" ("id" serial primary key, "name" character varying(255), "phone_number" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141008065152"]]
+  [1m[36m (15.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 258ms (Views: 220.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/handlebars-v2.0.0.js?body=1" for 127.0.0.1 at 2014-10-08 16:57:13 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-10-08 16:57:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 16:57:14 -0700
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-08 16:57:28 -0700
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "contacts"=>{"name"=>"Buzz LIghtyear", "phone_number"=>"+14443335555"}, "commit"=>"+Add Contact"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (15.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-08 23:57:28.080107"], ["name", "Buzz LIghtyear"], ["phone_number", "+14443335555"], ["updated_at", "2014-10-08 23:57:28.080107"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Completed 200 OK in 48ms (Views: 0.5ms | ActiveRecord: 19.6ms)
